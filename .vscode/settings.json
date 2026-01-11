@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "[toml]": {
+    "editor.formatOnSave": false
+  },
+  "cSpell.ignorePaths": [
+    "**/*.py" // Ignore all .dll files
+  ],
+}

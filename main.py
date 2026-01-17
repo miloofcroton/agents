@@ -7,6 +7,7 @@ from langchain.prompts import (
 from langchain.schema import SystemMessage
 from langchain.agents import OpenAIFunctionsAgent, AgentExecutor
 from tools.sql import run_query_tool, list_tables, describe_tables_tool
+from tools.report import write_report_tool
 
 tables = list_tables()
 chat = ChatOpenAI()
@@ -27,6 +28,7 @@ prompt = ChatPromptTemplate(
 tools = [
   run_query_tool,
   describe_tables_tool,
+  write_report_tool,
 ]
 
 agent = OpenAIFunctionsAgent(
@@ -41,5 +43,10 @@ agent_executor = AgentExecutor(
   tools=tools,
 )
 
-agent_executor("How many users have provided a shipping address?")
 # agent_executor("How many users are in the database?")
+# agent_executor("How many users have provided a shipping address?")
+agent_executor(
+  "Summarize the top 5 most popular products. Write the results to a report file."
+)
+# agent_executor("How many orders are there? Write the result to an html report.")
+# agent_executor("Repeat the exact same process for users.")

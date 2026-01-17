@@ -248,6 +248,7 @@ dependencies = [
     { name = "chromadb" },
     { name = "langchain" },
     { name = "langchain-openai" },
+    { name = "pyboxen" },
     { name = "python-dotenv" },
     { name = "tiktoken" },
 ]
@@ -257,6 +258,7 @@ requires-dist = [
     { name = "chromadb", specifier = ">=1.3.5" },
     { name = "langchain", specifier = "==0.0.352" },
     { name = "langchain-openai", specifier = "==0.0.6" },
+    { name = "pyboxen", specifier = ">=1.3.0" },
     { name = "python-dotenv", specifier = ">=1.0.0" },
     { name = "tiktoken", specifier = ">=0.12.0" },
 ]
@@ -1939,6 +1941,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/12/d7/6610f34a8972415fab3bb4704c174a1cc477bffbc3c36e526428d0f3957d/pybase64-1.4.3-pp311-pypy311_pp73-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:2af6d0d3a691911cc4c9a625f3ddcd3af720738c21be3d5c72de05629139d393", size = 41294, upload-time = "2025-12-06T13:26:44.936Z" },
     { url = "https://files.pythonhosted.org/packages/64/25/ed24400948a6c974ab1374a233cb7e8af0a5373cea0dd8a944627d17c34a/pybase64-1.4.3-pp311-pypy311_pp73-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:5cfc8c49a28322d82242088378f8542ce97459866ba73150b062a7073e82629d", size = 35447, upload-time = "2025-12-06T13:26:46.098Z" },
     { url = "https://files.pythonhosted.org/packages/ee/2b/e18ee7c5ee508a82897f021c1981533eca2940b5f072fc6ed0906c03a7a7/pybase64-1.4.3-pp311-pypy311_pp73-win_amd64.whl", hash = "sha256:debf737e09b8bf832ba86f5ecc3d3dbd0e3021d6cd86ba4abe962d6a5a77adb3", size = 36134, upload-time = "2025-12-06T13:26:47.35Z" },
+]
+
+[[package]]
+name = "pyboxen"
+version = "1.3.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "rich" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/46/e7/ade6ddc8ef255e2a3c112c6ab3210f70d26df79dbc2af53922e182bbc42f/pyboxen-1.3.0.tar.gz", hash = "sha256:f12e6c656769f9d6aa1dd5d11688a62ed12da9dcebfa22a242103c610130b948", size = 5943, upload-time = "2024-02-05T21:06:21.233Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/17/c0/ff96b0e84ba004123eddd0fb2299cc6499cff62eb6c126d468fc05181ab5/pyboxen-1.3.0-py3-none-any.whl", hash = "sha256:ac799533bbdb0a4f4a7c3b8723607dbe3aed3d293d3863e178064027f8177c9c", size = 6789, upload-time = "2024-02-05T21:06:19.479Z" },
 ]
 
 [[package]]

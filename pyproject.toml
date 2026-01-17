@@ -8,6 +8,7 @@ dependencies = [
   "chromadb>=1.3.5",
   "langchain==0.0.352",
   "langchain-openai==0.0.6",
+  "pyboxen>=1.3.0",
   "python-dotenv>=1.0.0",
   "tiktoken>=0.12.0",
 ]

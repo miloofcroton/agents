@@ -12,5 +12,8 @@ wheels/
 # Virtual environments
 .venv
 
+# ruff
+.ruff_cache
+
 # env variables
 .env

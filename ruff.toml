@@ -35,6 +35,5 @@ include = [
   "scripts/**/*.py"
 ]
 
-
 indent-width = 2
 # line-length = 5

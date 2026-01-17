@@ -9,9 +9,13 @@ from langchain.agents import OpenAIFunctionsAgent, AgentExecutor
 from langchain.memory import ConversationBufferMemory
 from tools.sql import run_query_tool, list_tables, describe_tables_tool
 from tools.report import write_report_tool
+from handlers.chat_model_start_handler import ChatModelStartHandler
 
+handler = ChatModelStartHandler()
+chat = ChatOpenAI(
+  callbacks=[handler],
+)
 tables = list_tables()
-chat = ChatOpenAI()
 prompt = ChatPromptTemplate(
   messages=[
     SystemMessage(
@@ -42,7 +46,7 @@ agent = OpenAIFunctionsAgent(
 
 agent_executor = AgentExecutor(
   agent=agent,
-  verbose=True,
+  # verbose=True,
   tools=tools,
   memory=memory,
 )

@@ -1,0 +1,9 @@
+[tools]
+uv = 'latest'
+
+[settings]
+python.uv_venv_auto = true
+
+[tasks.start]
+run = "uv run --env-file .env -- python main.py"
+description = "Use `uv` to run main script file"
